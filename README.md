@@ -1,0 +1,1 @@
+This repository host a web application who say if your are a boy or a girl based on your name. The server provider is https://genderize.io/ . And the result is interpreted and showed in a modern and cool interface made with HTML and CSS.
