@@ -1,1 +1,1 @@
-This repository host a web application who say if your are a boy or a girl based on your name. The server provider is https://genderize.io/ . And the result is interpreted and showed in a modern and cool interface made with HTML and CSS.
+This repository host a basic  web application who  take your name and send it to  https://genderize.io who return a json string response if you are a male or female . And the result is interpreted and showed in a modern and cool interface made with HTML and CSS.
