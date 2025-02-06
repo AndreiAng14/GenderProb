@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Honk&family=Lato&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+
+    <title>GenderProb</title>
+</head>
+<body>
+  
+    <div class="glowing">
+      
+      <span style="--i:1;"></span>
+      
+      <span style="--i:2;"></span>
+      
+      <span style="--i:3;"></span>
+      
+    </div>
+    
+    <div class="glowing">
+      
+      <span style="--i:1;"></span>
+      
+      <span style="--i:2;"></span>
+      
+      <span style="--i:3;"></span>
+      
+    </div>
+    
+    <div id="image">
+    <div id="text">
+      
+      <% if (locals.name==null && locals.gender==null && locals.probability==null ) { %>
+        <p  id="simple"  >Hello and welcome, just type your name there ☝️ and I will guess your gender</p>
+       <% } else{%>
+         <p id="complex" style="background-image: url('images/<%= locals.photo %>');">
+        Hello, <%= locals.name %> the probability to be a <%= locals.gender %> is the: <%= locals.probability %> %.
+        <% } %>
+
+       </p>
+    </div>
+              </div>
+
+    <div class="glowing">
+      
+      <span style="--i:1;"></span>
+      
+      <span style="--i:2;"></span>
+      
+      <span style="--i:3;"></span>
+      
+    </div>
+  </div> 
+  
+    <div class="glowing">
+      
+      <span style="--i:1;"></span>
+      
+      <span style="--i:2;"></span>
+      
+      <span style="--i:3;"></span>
+      
+    </div>
+
+    <div class="search-box">
+        <form action="/" method="post" id="myForm"> 
+            <input type="text" class="input-search animate" id="myInput" name="name" placeholder="Type your name...">
+        </form>
+      
+    
+   
+<script>
+    document.getElementById("myInput").addEventListener('input',function(){
+        clearTimeout(this.delay);
+        this.delay=setTimeout(function(){
+            document.getElementById("myForm").submit();
+        }.bind(this),1000);
+    });
+
+    
+        document.querySelector(".input-search").addEventListener("click",function(){
+           
+            document.querySelector(".input-search").classList.remove('animate');
+        })
+        document.querySelector(".input-search").addEventListener("blur",function(){
+            document.querySelector(".input-search").classList.add('animate');
+        })
+
+</script>
+  </body>
+</html>
