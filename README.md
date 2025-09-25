@@ -1,1 +1,1 @@
-This repository host a basic  web application who  take your name and send it to  https://genderize.io who return a json string response if you are a male or female . And the result is interpreted and showed in a modern and cool interface made with HTML and CSS.
+GenderProb is a basic web application that predicts gender based on a given name using the Genderize.io API. The result is displayed in a clean, modern interface built with HTML and CSS.
